@@ -1,5 +1,9 @@
+###
+```sh
+$ ./main.exe 
 Multypling a 4x4 Matrix A with a vector y and the first row of A with y.
 This gives different results in the firstt entry of the solution vector.
+
 y_4 ist the solution Ay and y_1 is the result of A[0,:]y.
 y_4[0]-y_1 -0.00000000000000044409
 Multypling the first row manually with a for loop, gives the result of y_1.
@@ -20,7 +24,9 @@ One order of addition that returns the same result as y_4 is 2,3,0,1.
 2+3+0:2.16656150247500223216
 2+3+0+1:2.16970695708621663655 - y_4[0] =  0.00000000000000000000
 2+3+0+1:2.16970695708621663655 - y_1 =  -0.00000000000000044409
-[njp@arch m3d_python]$ python main.py 
+```
+```sh
+$ python main.py 
 norm y_py - y_m3d:  4.4408920985e-16
 python first 5 values:  [ 2.16970116439824867172  2.1699684670590202451   2.17006950101934315001
   2.17007284988585791297  2.16970695708621708064]
@@ -34,3 +40,4 @@ compare the multyplication of the whole 4x4 block:
    0.00000000000000000000e+00   0.00000000000000000000e+00]
 The error does not happen, if computing only the multyplication of the first row of the Matrix with the vector.
 
+```
